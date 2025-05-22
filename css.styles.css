@@ -1,0 +1,144 @@
+/* Base Typography & Global Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    /* Global background image */
+    background: url('https://cdn.s-cloud.fi/v1/w3840_q90/assets/dam-id/E-D6yHe3q6p89cUZeXhS76.webp') center/cover fixed no-repeat;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar tweaks */
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    margin-left: 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #0d6efd !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 70vh;
+    /* override hero background since body has global bg */
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero h1,
+  .hero p,
+  .hero .btn {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Sections */
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+  }
+  
+  /* Footer */
+  .footer {
+    font-size: 0.9rem;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #0d6efd;
+  }
+  
+  /* Visually appealing background for main content (attractions, etc.) */
+.content-bg {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  margin: 0 auto 2.5rem auto;
+  max-width: 900px;
+}
+
+@media (max-width: 992px) {
+  .content-bg {
+    padding: 1.5rem 0.5rem;
+    max-width: 98vw;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-link {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+    .hero {
+      height: 50vh;
+      padding: 2rem 1rem;
+    }
+    .hero h1 {
+      font-size: 2rem;
+    }
+  }
+
+  /* Espoo texture background for home intro section */
+.espoo-texture-bg {
+  background: url('https://www.transparenttextures.com/patterns/geometry2.png'), rgba(255,255,255,0.92);
+  background-blend-mode: lighten;
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+}
+
+/* Food page background - slightly more visible */
+.food-bg {
+  background: linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80') center/cover fixed no-repeat;
+}
+
+/* Stay page background */
+.stay-bg {
+  background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover fixed no-repeat;
+}
+
+/* Attractions page background */
+.attractions-bg {
+  background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1500&q=80') center/cover fixed no-repeat;
+}
+
+/* Contact page background */
+.contact-bg {
+  background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80') center/cover fixed no-repeat;
+}
